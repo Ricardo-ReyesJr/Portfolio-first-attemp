@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-primary: "Roboto", "sans-serif";
+  --ff-secondary: "Source Sans Pro", "monospace";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-primary);
+}
+
+/* Menu and Header area */
+.header {
+  background-color: #fdfbfb;
+ /* background: linear-gradient(to right, #7a7a7a, #cccccc); */
+}
+.menu {
+  position: relevant;
+  text-decoration: none;
+  text-align: left;
+  padding: 4px;
+}
+#menu__item {
+  color: #4d5d53;
+  text-decoration: none;
+  text-align: justify;
+  padding: 7rem;
+  font-family: var(--ff-secondary);
+}
+
+/* Home page with visual skew */
+.content__title {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background: linear-gradient(45deg, #fdfdff, #b8d8be);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 250px;
+}
+.content__title:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: #fdf9f9;
+  clip-path: polygon(100% 30%, 0 100%, 100% 100%);
+}
+.content {
+  position: relative;
+  max-width: 900px;
+  text-align: center;
+}
+.content h2 {
+  margin: 0;
+  padding: 0;
+  color: #4d5d53;
+  text-shadow: 2px 2px #464646;
+  font-size: 5em;
+}
+.content p {
+  color: #4d5d53;
+  text-shadow: 1px 1px #464646;
+  font-size: 1.5em;
+}
+/* End of home page */
+
+/* tools */
+.tools {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  background-color: #fdf9f9;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1em;
+}
+
+.tools__img {
+  padding: -100px;
+  max-width: 50px;
+  height: 50px;
+}
+/* footer */
+.footer {
+  background-color: #fdf9f9;
+}
+.footer__contact {
+  display: grid;
+  justify-content: space-evenly;
+  text-decoration: none;
+  color: #464646;
+}
+.footer__copyright {
+  display: grid;
+  grid-template-rows: -0.5px -0.5px 5px;
+  justify-content: space-evenly;
+  color: #a8a8a8;
+}
+.social-list__link {
+  display: grid;
+  justify-content: space-evenly;
+  text-decoration: none;
+}
